@@ -2,17 +2,12 @@
 
 ## Enviar URL para ser encurtada
 
-Enviar via POST o tipo de dado JSON com o parâmetro originURL, conforme o exemplo:
+### Para iniciar o projeto:
 
 ```
-{
-    "originURL" : "www.google.com,br"
-}
+npm install
+npm run dev
 ```
-
-A API irá retornar a URL encurtada no campo shortURL.
-
-
 
 ### Para criar o banco de dados do MONGODB  e o MongoDB Express localmente utilizando Docker:
 
@@ -31,9 +26,13 @@ Para remover a stack de containers Docker que foi criada anteriormente:
 docker stack rm mongo
 ```
 
-### Para iniciar o projeto:
+Enviar via POST o tipo de dado JSON com o parâmetro originURL, conforme o exemplo:
 
 ```
-npm install
-npm run dev
+{
+    "originURL" : "www.google.com,br"
+}
 ```
+
+A API irá retornar a URL encurtada no campo shortURL.
+
