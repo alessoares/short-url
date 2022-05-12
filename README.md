@@ -1,5 +1,19 @@
 ## Encurtador de URL desenvolvido em Javascript com Typescrit e armazenamento dos dados no MongoDB
 
+## Enviar URL para ser encurtada
+
+Enviar via POST o tipo de dado JSON com o parâmetro originURL, conforme o exemplo:
+
+```
+{
+    "originURL" : "www.google.com,br"
+}
+```
+
+A API irá retornar a URL encurtada no campo shortURL.
+
+
+
 ### Para criar o banco de dados do MONGODB  e o MongoDB Express localmente utilizando Docker:
 
 Dentro do diretório da aplicação:
